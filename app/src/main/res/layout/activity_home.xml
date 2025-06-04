@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:layout_marginTop="100dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/joke_setup"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:hint="Setup"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_show"
+        android:text="Show Punchline"
+        android:layout_below="@id/joke_setup"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joke_punchline"
+        android:padding="16dp"
+        android:layout_below="@id/button_show"
+        android:layout_marginTop="16dp"
+        android:hint="Punchline"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_joke"
+        android:text="Next Joke"
+        android:layout_below="@id/joke_punchline"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+</RelativeLayout>
